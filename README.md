@@ -36,14 +36,13 @@ To register a user run a post query at http://localhost:8080/localhost:8080/api/
 
 ## Login Usage
 ```
-To login with a user run a post query at http://localhost:8080/login with the credentials in the body like so
+To login with a user enter the credentials at http://localhost:8080/login 
 
 {
     "email": "johnsmith@test.com",
     "password": "password"
 }
 
-Until the user is validated you will recieve a disabled user error if you try to login
 ```
 
 ## Validate User Usage
