@@ -7,6 +7,13 @@ This is a demo application demonstrating a login and registration that can send 
 Java, Spring boot, h2, Lombok, Spring web, Spring Security, Java Mail Sender, Gradle, Docker
 ```
 
+## Verifying data in the database
+```
+To access the h2 database i have enabled h2-console in application.properities
+Go to localhost:8080/h2-console
+Before connecting make sure the database is set to jdbc:h2:mem:testdb then click connect
+```
+
 ## Running with docker-compose
 '''
 You can run the application via docker compose up -d however email functionality will be unavailable as there is no maildev setup with docker-compose
