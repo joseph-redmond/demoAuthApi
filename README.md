@@ -13,6 +13,7 @@ From the root folder run
 docker image build -t demoauthapi .
 docker network create authapi-net
 docker run --net authapi-net -p 1080:1080 -p 1025:1025 --name maildev soulteary/maildev
+Open a new terminal as maildev will close when that terminal does
 docker run -d -p 8080:8080 --net authapi-net --name demoauthapi demoauthapi
 
 ```
