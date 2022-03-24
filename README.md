@@ -13,6 +13,7 @@ From the root folder run
 docker image build -t demoauthapi .
 docker network create authapi-net
 docker run --net authapi-net -p 1080:1080 -p 1025:1025 --name maildev soulteary/maildev
+Open a new terminal as maildev will close when that terminal does
 docker run -d -p 8080:8080 --net authapi-net --name demoauthapi demoauthapi
 
 ```
@@ -21,8 +22,6 @@ docker run -d -p 8080:8080 --net authapi-net --name demoauthapi demoauthapi
 
 ```
 At localhost:8080 you are given the a login screen
-
-At localhost:1080 you are given the webmail for the maildev smtp server
 
 To register a user run a post query at http://localhost:8080/localhost:8080/api/v1/registration with a body like this example
 {
@@ -35,18 +34,23 @@ To register a user run a post query at http://localhost:8080/localhost:8080/api/
 
 ## Login Usage
 ```
-To login with a user run a post query at http://localhost:8080/login with the credentials in the body like so
+To login with a user enter the credentials at http://localhost:8080/login 
 
 {
     "email": "johnsmith@test.com",
     "password": "password"
 }
 
-Until the user is validated you will recieve a disabled user error if you try to login
 ```
 
 ## Validate User Usage
 ```
 To validate the user send the validation token as a get request to 
 localhost:8080/api/v1/registration/confirm?token=
+```
+
+## Webmail Usage
+```
+At localhost:1080 you are given the webmail for the maildev smtp server. When a user signs up the token will be sent here.
+
 ```
