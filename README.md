@@ -18,6 +18,16 @@ docker run -d -p 8080:8080 --net authapi-net --name demoauthapi demoauthapi
 
 ```
 
+## If you are running on linux or wsl
+```
+chmod +x startme.sh
+chmod +x endme.sh
+chmod +x gradlew
+
+If any permission errors occur run endme.sh to clear docker before running startme.sh again
+Run endme.sh when finished using the program
+```
+
 ## Registration Usage
 
 ```
