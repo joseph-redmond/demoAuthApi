@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  app:
+    container_name: demoapi-springboot-h2
+    image: demoapi-springboot-h2
+    build: ./
+    ports:
+      - "8080:8080"
+      - "1080:1080"
+      - "1025:1025"
