@@ -2,6 +2,16 @@
 
 This is a demo application demonstrating a login and registration that can send verification tokens to their email.
 
+## Technologies used in this project
+```
+Java, Spring boot, h2, Lombok, Spring web, Spring Security, Java Mail Sender, Gradle, Docker
+```
+
+## Running with docker-compose
+'''
+You can run the application via docker compose up -d however email functionality will be unavailable as there is no maildev setup with docker-compose
+'''
+
 ## Installation
 
 Must have docker installed
