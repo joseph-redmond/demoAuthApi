@@ -1,5 +1,6 @@
 #!/bin/bash
 
+./gradlew clean build
 docker image build -t demoauthapi .
 docker network create authapi-net
 
