@@ -23,8 +23,6 @@ docker run -d -p 8080:8080 --net authapi-net --name demoauthapi demoauthapi
 ```
 At localhost:8080 you are given the a login screen
 
-At localhost:1080 you are given the webmail for the maildev smtp server
-
 To register a user run a post query at http://localhost:8080/localhost:8080/api/v1/registration with a body like this example
 {
 	"firstName": "john",
@@ -49,4 +47,10 @@ To login with a user enter the credentials at http://localhost:8080/login
 ```
 To validate the user send the validation token as a get request to 
 localhost:8080/api/v1/registration/confirm?token=
+```
+
+## Webmail Usage
+```
+At localhost:1080 you are given the webmail for the maildev smtp server. When a user signs up the token will be sent here.
+
 ```
