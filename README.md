@@ -4,7 +4,7 @@ This is a demo application demonstrating a login and registration that can send 
 
 ## Technologies used in this project
 ```
-Java, Spring boot, h2, Lombok, Spring web, Spring Security, Java Mail Sender, Gradle, Docker
+Java, Spring boot, h2, Lombok, Spring web, Spring Security, Java Mail Sender, Gradle, Docker, maildev
 ```
 
 ## Verifying data in the database
